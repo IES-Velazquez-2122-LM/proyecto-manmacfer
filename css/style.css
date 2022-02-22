@@ -6,10 +6,11 @@ body {
     background-position: center;
     color: #ededed;
     margin: 0px 0px 35px 0px;
+    width: 100%;
 }
 header {
     margin-top: 40px;
-    height: 340px;
+    height: 450px;
     text-align: center;
 }
 nav {
@@ -30,12 +31,12 @@ nav a {
     margin: 0px 5px;
 }
 
-.cabecera {
+#cabecera {
     animation: neon 2s infinite alternate;
     font-family: NEON____;
     font-size: 70px;
     position: relative;
-    top: 122px;
+    top: 185px;
     margin: auto;
 }
 
@@ -54,12 +55,65 @@ nav a {
     }
 
 main {
-    width: 900px;
+    max-width: 900px;
     margin: auto;
     background: #0e0e0e;
     text-align: center;
     border: 1px solid #252525;
     outline: 20px solid #070707d6;
+}
+
+article {
+    overflow: hidden;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+#category {
+    padding: 30px 25px;
+    background: url(/proyecto-manmacfer/images/Fondo-cat.png) fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+#category h1 {
+    text-align: left;
+    background: #141414d9;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-family: calibri;
+    letter-spacing: 7px;
+    font-weight: 200;
+}
+
+.desartc {
+    max-width: 450px;
+    clear: left;
+    margin: 26px 0px 25px 15px;
+}
+
+.desartc h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: calibri;
+    margin: 0px 0px 10px 0px;
+}
+
+.desartc a {
+    color:#a76c0f;
+}
+.desartc a:hover {
+    color: #a10000;
+}
+
+.desc {
+    text-align: justify;
+    color: #727272;
+}
+
+.imgartc {
+    margin: 25px 15px;
+    float: right;
 }
 
 .button {
