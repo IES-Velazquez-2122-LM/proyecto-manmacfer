@@ -68,14 +68,14 @@ article {
     border-bottom: 1px solid #2a2a2a;
 }
 
-#category {
+.category {
     padding: 30px 25px;
     background: url(/proyecto-manmacfer/images/Fondo-cat.png) fixed;
     background-size: cover;
     background-position: center;
 }
 
-#category h1 {
+.category h1 {
     text-align: left;
     background: #141414d9;
     padding: 10px 20px;
