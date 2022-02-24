@@ -40,6 +40,31 @@ nav a {
     margin: auto;
 }
 
+.header2 {
+    min-height: 525px;
+}
+
+#titcab {
+    font-family: Orbitron;
+    font-size: 40px;
+    position: relative;
+    top: 25px;
+    margin: auto;
+    width: 900px;
+    color: #a10000;
+    text-shadow: 3px 3px black;
+    z-index: 10;
+}
+
+#imgcab {
+    position: relative;
+    top: 50px;
+}
+
+#imgcab img {
+    outline: 25px solid #070707d6;
+}
+
 @keyframes neon {
 	0%, 10%, 15%, 20%, 30%, 35%, 40%, 50%, 55%, 60%, 70%, 75%, 80%, 85%, 90%, 100% {
 		text-shadow: 4px 4px 4px #fe0000, 3px 3px 5px #ff0000, -3px -3px 5px #a76c0f, -3px 3px 7px #a76c0f;
@@ -114,6 +139,35 @@ article {
 .imgartc {
     margin: 25px 15px;
     float: right;
+}
+
+.mainart p {
+    width: 800px;
+    margin: 16px auto;
+    text-align: justify;
+    font-size: 17px;
+    font-family: arial;
+    color: #bfbfbf;
+}
+
+.mainart h2 {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-family: 'Orbitron';
+    font-size: 20px;
+    color: #fff;
+    border-bottom: 1px solid #464646;
+    width: 830px;
+    margin: 30px auto;
+    padding-bottom: 10px;
+}
+
+.mainart ul {
+    text-align: left;
+    margin-left: 27px;
+    font-size: 16px;
+    font-family: arial;
+    color: #bfbfbf;
 }
 
 .button {
