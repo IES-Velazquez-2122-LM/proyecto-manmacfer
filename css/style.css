@@ -1,4 +1,4 @@
-p {width: 670px; margin: 16px auto; text-align: justify;}
+p {margin: 16px auto; text-align: justify;}
 
 body {
     background: url(/proyecto-manmacfer/images/Fondo.png) fixed;
@@ -50,7 +50,7 @@ nav a {
     position: relative;
     top: 25px;
     margin: auto;
-    width: 900px;
+    max-width: 900px;
     color: #a10000;
     text-shadow: 3px 3px black;
     z-index: 10;
@@ -91,6 +91,18 @@ main {
 article {
     overflow: hidden;
     border-bottom: 1px solid #2a2a2a;
+}
+
+.accion {
+    background: #2200004d;
+}
+
+.fantasia {
+    background: #1000224d;
+}
+
+.terror {
+    background: #001a224d;
 }
 
 .category {
@@ -142,11 +154,12 @@ article {
 }
 
 .mainart p {
-    width: 800px;
+    max-width: 800px;
     margin: 16px auto;
     text-align: justify;
     font-size: 17px;
     font-family: arial;
+    padding: 0px 20px;
     color: #bfbfbf;
 }
 
@@ -157,7 +170,7 @@ article {
     font-size: 20px;
     color: #fff;
     border-bottom: 1px solid #464646;
-    width: 830px;
+    max-width: 830px;
     margin: 30px auto;
     padding-bottom: 10px;
 }
@@ -168,6 +181,24 @@ article {
     font-size: 16px;
     font-family: arial;
     color: #bfbfbf;
+}
+
+footer {
+    border-top: 25px solid #000;
+    background: #00000045;
+}
+
+.footertext {
+    width: 670px;
+    text-align: center;
+    padding: 40px 20px;
+    text-transform: uppercase;
+    line-height: 30px;
+    margin: 0px auto;
+}
+
+.footerart {
+    margin-top: 30px;
 }
 
 .button {
@@ -206,3 +237,28 @@ article {
 .button:focus {
     text-transform: uppercase
 }
+
+td {
+    border: 1px solid black;
+    width: 100%;
+    background: #00000073;
+}
+
+td a {
+    color: #e15151;
+    font-size: 19px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: calibri;
+}
+
+td a:hover {
+    color: #fff;
+}
+
+th {
+    text-transform: uppercase;
+    padding: 0px 30px;
+}
+
+table {margin: 20px auto;}
