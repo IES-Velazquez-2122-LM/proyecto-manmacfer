@@ -261,3 +261,52 @@ th {
 }
 
 table {margin: 20px auto;}
+
+.profile {
+    max-width: 740px;
+    margin: 40px auto;
+}
+.datos {
+    max-width: 740px;
+    margin: 40px auto;
+}
+.campo {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+}
+.profile .campo label {
+    min-width: 180px;
+    text-align: left;
+    background: #222222;
+    padding: 5px;
+    text-transform: uppercase;
+    font-family: calibri;
+    font-size: 13px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #4a4a4a;
+}
+.profile .campo input {
+    display: inline-block;
+    min-width: 180px;
+    background: #000;
+    color: #ededed;
+}
+input#nacimiento {
+    color: #000000;
+    background: #999999;
+}
+input.btninput {
+    font-size: 13px;
+    font-family: calibri;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+input.btninput:hover {
+    background: #c83900;
+    color: #000;
+}

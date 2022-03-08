@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Manuel Machuca Fernánez">
+    <meta name="description" content="Página de noticias sobre cine.">
+    <meta name="robots" content="all">
+    <meta name="keywords" content="películas, noticias de películas, cine, noticias de cine">
+    <title>Action! - Halloween</title>
+    <link rel ="icon" href="/proyecto-manmacfer/icons/favicon.png" type="image/png">
+    <link href="/proyecto-manmacfer/css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <script src="/proyecto-manmacfer/js/javascript.js"></script>
+</head>
+<body>
+    <nav>
+        <a class="button" href="/proyecto-manmacfer/index.html">Inicio</a>
+        <a class="button" href="/proyecto-manmacfer/index.html#secterror">Volver atrás</a>
+    </nav>
+
+    <header>
+        <div id="cabecera">Formulario</div>
+    </header>
+
+    <main class="mainart">
+
+        <form name="formulario" action="mailto:manuelmachuca94@gmail.com">
+            <div class="profile">
+                <div class="campo"><label for="user">Nombre de Usuario</label><input name="user" id="user" type="text" required></div>
+
+                <div class="campo"><label for="passw1">Indique una contraseña</label><input name="passw1" id="passw1" type="password" minlength="6" required></div>
+                <div class="campo"><label for="passw2">Repita la contraseña</label><input name="passw2" id="passw2" type="password" minlength="6" required></div>
+                <div class="campo"><input type="button" value="Comprobar contraseña" onClick="passw()" class="btninput"></div>
+
+                <div class="campo"><label for="email1">Indique su correo:</label><input type="email" name="email1" id="email1"></div>
+                <div class="campo"><label for="email2">Repita su correo:</label><input type="email" name="email2" id="email2"></div>
+                <div class="campo"><input type="button" value="Comprobar email" onClick="email0()" class="btninput"></div>
+
+                <div class="campo"><label for="age">Edad</label><input name="age" id="age" type="number" required min="18"></div>
+
+                <div class="campo"><label for="nacimiento">Fecha de nacimiento:</label><input type="date" name="nacimiento" id="nacimiento"></div>
+
+                <div class="campo"><label for="phone">Número de teléfono:</label><input name="phone" id="phone"type="tel"></div>
+
+                <div class="campo"><label for="twitter">Perfil de Twitter:</label><input type="url" name="twitter" id="twitter"></div>
+            </div>
+
+            <div class="datos">
+                <div class="campo"><p>Escoja los géneros de su interés:</p>
+
+                <label for="gaccion">Acción</label><input type="checkbox" name="gaccion" id="gaccion" value="gaccion">
+                <label for="gaventuras">Aventuras</label><input type="checkbox" name="gaventuras" id="gaventuras" value="gaventuras">
+                <label for="gcf">Ciencia Ficción</label><input type="checkbox" name="gcf" id="gcf" value="gcf">
+                <label for="gcomedia">Comedia</label><input type="checkbox" name="gcomedia" id="gcomedia" value="gcomedia">
+                <label for="gdocumental">Documental</label><input type="checkbox" name="gdocumental" id="gdocumental" value="gdocumental">
+                <label for="gdrama">Drama</label><input type="checkbox" name="gdrama" id="gdrama" value="gdrama">
+                <label for="gfantasia">Fantasía</label><input type="checkbox" name="gfantasia" id="gfantasia" value="gfantasia">
+                <label for="gmusical">Musical</label><input type="checkbox" name="gmusical" id="gmusical" value="gmusical">
+                <label for="gsuspense">Suspense</label><input type="checkbox" name="gsuspense" id="gsuspense" value="gsuspense">
+                <label for="gterror">Terror</label><input type="checkbox" name="gterror" id="gterror" value="gterror">
+                </div>
+
+                <div class="campo"><p>¿Quiere recibir nuestra Newsletter en su correo?</p>
+
+                <label for="yes">Si</label><input type="radio" name="newsletter" id="yes" value="yes">
+                <label for="not">No</label><input type="radio" name="newsletter" id="not" value="not"></div>
+
+                <div class="campo"><label for="range">¿Cuántas veces has ido el último año al cine?</label><input type="range" name="range" id="range" min="0" max="100" step="1"></div>
+            </div>
+        </form>
+
+            <footer class="footerart">
+                <div class="footertext">
+                    Alumno: Manuel Machuca Fernández<br>
+                    Asignatura: Lenguajes de marcas<br>
+                    Curso: 2021-2022
+                </div>
+            </footer>
+    </main>
+</body>
+</html>
