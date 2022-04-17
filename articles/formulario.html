@@ -27,26 +27,23 @@
 
         <h1>Formulario de Registro</h1>
 
-        <form name="formulario" enctype="text/plain" action="mailto:manuelmachuca94@gmail.com" method="post">
+        <form name="formulario" enctype="text/plain" action="mailto:manuelmachucadgfvdfv94@gmail.com" method="post" onsubmit="return passw()">
             <div class="profile">
                 <fieldset>
                     <legend>Datos Personales</legend>
 
-                    <div class="campo"><label for="user">Nombre de Usuario</label><input name="user" id="user" type="text" required></div>
+                    <div class="campo"><label for="user">Nombre de Usuario</label><input name="user" id="user" type="text" value="Nombre" onfocus="vaciar(this)" onblur="verificar(this)"></div>
 
                     <div class="campo"><label for="passw1">Indique una contraseña</label><input name="passw1" id="passw1" type="password" minlength="6" required></div>
                     <div class="campo"><label for="passw2">Repita la contraseña</label><input name="passw2" id="passw2" type="password" minlength="6" required></div>
-                    <div class="campo"><input type="button" value="Comprobar contraseña" onClick="passw()" class="btninput"></div>
 
-                    <div class="campo"><label for="email1">Indique su correo:</label><input type="email" name="email1" id="email1"></div>
-                    <div class="campo"><label for="email2">Repita su correo:</label><input type="email" name="email2" id="email2"></div>
-                    <div class="campo"><input type="button" value="Comprobar email" onClick="email0()" class="btninput"></div>
+                    <div class="campo"><label for="email">Indique su correo:</label><input type="email" name="email" id="email"></div>
 
                     <div class="campo"><label for="age">Edad</label><input name="age" id="age" type="number" required min="18"></div>
 
                     <div class="campo"><label for="nacimiento">Fecha de nacimiento:</label><input type="date" name="nacimiento" id="nacimiento"></div>
 
-                    <div class="campo"><label for="phone">Número de teléfono:</label><input name="phone" id="phone" type="tel"></div>
+                    <div class="campo"><label for="phone">Número de teléfono:</label><input name="phone" id="phone" type="tel" onchange="onlynum()"></div>
 
                     <div class="campo"><label for="twitter">Perfil de Twitter:</label><input type="url" name="twitter" id="twitter"></div>
                 </fieldset>
@@ -57,16 +54,16 @@
                     <legend>Datos de Interés</legend>
                     <h2>Escoja los géneros de su interés:</h2>
                     <div class="campo2">
-                        <div class="gencamp"><label for="gaccion">Acción</label><input type="checkbox" name="gaccion" id="gaccion" value="gaccion"></div>
-                        <div class="gencamp"><label for="gaventuras">Aventuras</label><input type="checkbox" name="gaventuras" id="gaventuras" value="gaventuras"></div>
-                        <div class="gencamp"><label for="gcf">Ciencia Ficción</label><input type="checkbox" name="gcf" id="gcf" value="gcf"></div>
-                        <div class="gencamp"><label for="gcomedia">Comedia</label><input type="checkbox" name="gcomedia" id="gcomedia" value="gcomedia"></div>
-                        <div class="gencamp"><label for="gdocumental">Documental</label><input type="checkbox" name="gdocumental" id="gdocumental" value="gdocumental"></div>
-                        <div class="gencamp"><label for="gdrama">Drama</label><input type="checkbox" name="gdrama" id="gdrama" value="gdrama"></div>
-                        <div class="gencamp"><label for="gfantasia">Fantasía</label><input type="checkbox" name="gfantasia" id="gfantasia" value="gfantasia"></div>
-                        <div class="gencamp"><label for="gmusical">Musical</label><input type="checkbox" name="gmusical" id="gmusical" value="gmusical"></div>
-                        <div class="gencamp"><label for="gsuspense">Suspense</label><input type="checkbox" name="gsuspense" id="gsuspense" value="gsuspense"></div>
-                        <div class="gencamp"><label for="gterror">Terror</label><input type="checkbox" name="gterror" id="gterror" value="gterror"></div>
+                        <div class="gencamp"><label for="gaccion" onclick="chclyel();" id="chcolor">Acción</label><input type="checkbox" name="gaccion" id="gaccion" value="gaccion"></div>
+                        <div class="gencamp"><label for="gaventuras" onclick="chclyel1()" id="chcolor1">Aventuras</label><input type="checkbox" name="gaventuras" id="gaventuras" value="gaventuras"></div>
+                        <div class="gencamp"><label for="gcf" onclick="chclyel2()" id="chcolor2">Ciencia Ficción</label><input type="checkbox" name="gcf" id="gcf" value="gcf"></div>
+                        <div class="gencamp"><label for="gcomedia" onclick="chclyel3()" id="chcolor3">Comedia</label><input type="checkbox" name="gcomedia" id="gcomedia" value="gcomedia"></div>
+                        <div class="gencamp"><label for="gdocumental" onclick="chclyel4()" id="chcolor4">Documental</label><input type="checkbox" name="gdocumental" id="gdocumental" value="gdocumental"></div>
+                        <div class="gencamp"><label for="gdrama" onclick="chclyel5()" id="chcolor5">Drama</label><input type="checkbox" name="gdrama" id="gdrama" value="gdrama"></div>
+                        <div class="gencamp"><label for="gfantasia" onclick="chclyel6()" id="chcolor6">Fantasía</label><input type="checkbox" name="gfantasia" id="gfantasia" value="gfantasia"></div>
+                        <div class="gencamp"><label for="gmusical" onclick="chclyel7()" id="chcolor7">Musical</label><input type="checkbox" name="gmusical" id="gmusical" value="gmusical"></div>
+                        <div class="gencamp"><label for="gsuspense" onclick="chclyel8()" id="chcolor8">Suspense</label><input type="checkbox" name="gsuspense" id="gsuspense" value="gsuspense"></div>
+                        <div class="gencamp"><label for="gterror" onclick="chclyel9()" id="chcolor9">Terror</label><input type="checkbox" name="gterror" id="gterror" value="gterror"></div>
                     </div>
 
                     <div class="campo"><h2>¿Quiere recibir nuestra Newsletter en su correo?</h2>

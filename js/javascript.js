@@ -1,27 +1,70 @@
 function passw() {
 
-    passw1 = document.formulario.passw1.value
-    passw2 = document.formulario.passw2.value
+    var pass1 = document.getElementById("passw1").value;
+    var pass2 = document.getElementById("passw2").value;
 
-    if (passw1 == passw2)
+    if (pass1.length == 0 || pass2.length == 0) {
 
-       alert("Las contraseñas conciden.")
+       alert("La contraseña no puede estar vacía")
+       return false;
+    };
 
-        else
+    if (pass1 != pass2) {
 
-            alert("Error, las contraseñas no coinciden.")
+        alert("Las contraseñas no coinciden.");
+        return false;
+     } else {
+         alert("Las contraseñas coinciden.");
+         return true;
+     };
 }
 
-function email0() {
+function onlynum() {
+    var phone = document.getElementById("phone").value;
+    if (isNaN(phone)) {
+        alert("Solo puede añadir números.");
+        return false;
+    }
+}
 
-    email1 = document.formulario.email1.value
-    email2 = document.formulario.email2.value
+function chclyel() {
+    document.getElementById("chcolor").style.color = "#e3c249";
+}
 
-    if (email1 == email2)
+function chclyel1() {
+    document.getElementById("chcolor1").style.color = "#e3c249";
+}
+function chclyel2() {
+    document.getElementById("chcolor2").style.color = "#e3c249";
+}
+function chclyel3() {
+    document.getElementById("chcolor3").style.color = "#e3c249";
+}
+function chclyel4() {
+    document.getElementById("chcolor4").style.color = "#e3c249";
+}
+function chclyel5() {
+    document.getElementById("chcolor5").style.color = "#e3c249";
+}
+function chclyel6() {
+    document.getElementById("chcolor6").style.color = "#e3c249";
+}
+function chclyel7() {
+    document.getElementById("chcolor7").style.color = "#e3c249";
+}
+function chclyel8() {
+    document.getElementById("chcolor8").style.color = "#e3c249";
+}
+function chclyel9() {
+    document.getElementById("chcolor9").style.color = "#e3c249";
+}
 
-       alert("Los emails conciden.")
+function vaciar(control) {
+    control.value == '';
+}
 
-        else
-
-            alert("Error, los emails no coinciden.")
+function verificar(control) {
+    if (control.value == '') {
+        alert("Este campo no puede quedar vacío.");
+    }
 }
